@@ -161,6 +161,161 @@ sub {
 }
 
 /* 1.2. Clear Fix
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Force scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+/* Align radios and text inputs with their label */
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+/* Hand cursor on clickable input elements */
+label,
+input[type="button"],
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup {
+  top: -0.7em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* 1.2. Clear Fix
 			========================== */
 .cf:before,
 .cf:after {
@@ -209,13 +364,99 @@ li {
 
 /* desktop version start */
 
-.container {
+.agency {
+  background-color: rgb(83, 80, 80);
+  margin-top: 50px;
+}
+
+.agency .wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.agency .wrapper .agencysection_heading {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.agency .wrapper .agencysection_heading h2 {
+  font-size: 2.5rem;
+  color: aqua;
+}
+
+.agency .wrapper .agencysection_heading p {
+  color: white;
+}
+
+.agency .wrapper .agencysection_heading span {
+  display: inline-block;
+  height: 2px;
+  background-color: black;
+  width: 10.1%;
+  content-visibility: hidden;
+}
+
+.agency_element {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0%;
+}
+
+.agency_element img {
+  width: 35%;
+  margin-right: 20px;
+}
+
+.agency_element2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 10px;
+}
+
+.agency_element2 h4 {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 600;
+}
+
+.agency_element2 p {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.agency_element2 p:nth-of-type(2),
+.agency_element2 p:nth-of-type(3) {
+  font-size: smaller;
+  font-weight: 100;
+}
+
+.agency_element3 li {
+  margin-right: 10px;
+  margin-left: 1px;
+  color: white;
+}
+
+.agency_element3 li:first-of-type {
+  color: aqua;
+}
+
+.agency_element2 .agency_element4 {
+  display: inline-block;
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  content-visibility: hidden;
+}
+.navbar {
   background-image: url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8b2ZmaWNlfGVufDB8fDB8fHww");
-  background-repeat: no-repeat;
-  background-position: bottom;
   background-size: cover;
-  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
+  height: 60vh;
 }
 
 .digitalteam .wrapper {
@@ -243,7 +484,7 @@ li {
   margin-bottom: 10px;
 }
 
-.digitalteam span {
+.digitalteam .grayunderline {
   display: inline-block;
   height: 2px;
   background-color: black;
@@ -296,10 +537,185 @@ li {
   color: white;
 }
 
-navbar .wrapper .nav_list li {
+.navbar .wrapper .nav_list li {
   margin-right: 5px;
 }
 
 .navbar .wrapper .nav_list li:first-child {
   color: aqua;
+}
+
+.whatwedosection_heading {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.whatwedosection .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.whatwedosection .wrapper h2 {
+  font-size: 2.5rem;
+  color: rgba(31, 231, 231, 0.89);
+}
+
+.whatwedosection_heading span {
+  display: inline-block;
+  height: 2px;
+  background-color: gray;
+  width: 100%;
+  content-visibility: hidden;
+}
+
+.whatwedosection_heading p {
+  color: black;
+}
+
+.whatwedosection .wrapper .whatwedosection_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 17%);
+  column-gap: 40px;
+  row-gap: 30px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.whatwedosection_card p:first-of-type {
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.talentedteam .wrapper {
+  text-align: center;
+}
+
+.talentedteam .wrapper h2 {
+  font-size: 2.5rem;
+  color: rgba(31, 231, 231, 0.89);
+}
+
+.talentedteamsection_heading {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.talentedteamsection_heading span {
+  display: inline-block;
+  height: 2px;
+  background-color: gray;
+  width: 10%;
+  content-visibility: hidden;
+}
+
+.talentedteam_imgs {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.talentedteam_img img {
+  width: 100%;
+}
+
+.porfolio_heading h2 {
+  font-size: 2.5rem;
+  color: aqua;
+  font-weight: 600;
+}
+
+.porfolio_heading p {
+  font-weight: 600;
+}
+
+.porfolio_heading span {
+  display: inline-block;
+  height: 2px;
+  background-color: gray;
+  width: 10%;
+  content-visibility: hidden;
+}
+
+.portfolio .wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.portfolio .portfolio_list {
+  font-size: smaller;
+  font-weight: 600;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.portfolio_list li {
+  margin-right: 15px;
+}
+
+.portfolio_list li:first-of-type {
+  color: aqua;
+}
+.portfolio_imgs {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  gap: 10px;
+  column-gap: 10px;
+  justify-content: center;
+}
+
+.portfolio_img img {
+  width: 100%;
+}
+
+.pricing .wrapper {
+  text-align: center;
+}
+
+.pricing_heading h2 {
+  font-size: 2.5rem;
+  color: aqua;
+  font-weight: 600;
+}
+
+.pricing_heading {
+  margin-top: 150px;
+}
+
+.pricing_heading p {
+  font-weight: 600;
+}
+
+.pricing_heading span {
+  display: inline-block;
+  height: 2px;
+  background-color: gray;
+  width: 10%;
+  content-visibility: hidden;
+}
+
+.pricing_list {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  grid-template-rows: 600px;
+
+  justify-content: space-between;
+  text-align: center;
+}
+
+.pricing_list li {
+  padding: 50px 5%;
+  border: 2px solid black;
+}
+
+.price_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
