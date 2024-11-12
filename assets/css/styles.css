@@ -717,10 +717,10 @@ li {
 
 .price_list i {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 50%; /* Makes it a circle */
-  width: 100px; /* Set a fixed width */
-  height: 20%; /* Set a fixed height to match width */
-  display: flex; /* Center the icon inside */
+  border-radius: 50%;
+  width: 100px;
+  height: 20%;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
@@ -902,4 +902,26 @@ footer .wrapper {
   background-color: gray;
   width: 10%;
   content-visibility: hidden;
+}
+
+.social_links_cards {
+  display: flex;
+  justify-content: center;
+}
+.social_links_cards li {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 60px;
+  height: 10%;
+  margin-right: 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.social_links_cards .facebook::before {
+  content: "\f005";
+  font-weight: 600;
+  font-size: 2rem;
+  font-family: "Font Awesome 5 Free";
 }
