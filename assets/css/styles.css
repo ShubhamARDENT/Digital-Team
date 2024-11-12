@@ -686,6 +686,7 @@ li {
 
 .pricing_heading {
   margin-top: 150px;
+  margin-bottom: 50px;
 }
 
 .pricing_heading p {
@@ -704,18 +705,79 @@ li {
   display: grid;
   grid-template-columns: repeat(3, 250px);
   grid-template-rows: 600px;
-
   justify-content: space-between;
   text-align: center;
 }
 
 .pricing_list li {
   padding: 50px 5%;
-  border: 2px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.price_list i {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 50%; /* Makes it a circle */
+  width: 100px; /* Set a fixed width */
+  height: 20%; /* Set a fixed height to match width */
+  display: flex; /* Center the icon inside */
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.price_list .mobile::before {
+  content: "\f3ce";
+  font-size: 2rem;
+}
+
+.price_list .desktop::before {
+  content: "\f3ce";
+  font-size: 2rem;
+}
+.price_list .cloud::before {
+  content: "\f3ce";
+  font-size: 2rem;
 }
 
 .price_list {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+}
+
+.price_list span {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.price_list .amount {
+  font-size: 2rem;
+}
+
+.price_description p {
+  font-weight: 600;
+  font-size: small;
+  margin-top: 20px;
+}
+
+.price_list #btn1 {
+  background-color: aqua;
+  border: none;
+  padding: 10px 15%;
+  color: white;
+}
+
+.price_list #btn2 {
+  background-color: orange;
+  border: none;
+  padding: 10px 15%;
+  color: white;
+}
+
+.price_list #btn3 {
+  background-color: green;
+  border: none;
+  padding: 10px 15%;
+  color: white;
 }
