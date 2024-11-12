@@ -691,6 +691,7 @@ li {
 
 .pricing_heading p {
   font-weight: 600;
+  font-size: 1.5rem;
 }
 
 .pricing_heading span {
@@ -728,15 +729,21 @@ li {
 .price_list .mobile::before {
   content: "\f3ce";
   font-size: 2rem;
+  font-weight: 600;
+  font-family: "Font Awesome 5 Free";
 }
 
 .price_list .desktop::before {
-  content: "\f3ce";
+  content: "\f390";
   font-size: 2rem;
+  font-weight: 600;
+  font-family: "Font Awesome 5 Free";
 }
 .price_list .cloud::before {
-  content: "\f3ce";
+  content: "\f0c2";
   font-size: 2rem;
+  font-weight: 600;
+  font-family: "Font Awesome 5 Free";
 }
 
 .price_list {
@@ -780,4 +787,102 @@ li {
   border: none;
   padding: 10px 15%;
   color: white;
+}
+
+.contactus {
+  background-image: url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8b2ZmaWNlfGVufDB8fDB8fHww");
+  background-position: center;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px;
+  margin-top: 60px;
+}
+
+.contactus .wrapper {
+  text-align: center;
+}
+
+.contactus_heading h2 {
+  color: aqua;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.contactus_heading p {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.contactus_heading span {
+  display: inline-block;
+  height: 2px;
+  background-color: gray;
+  width: 10%;
+  content-visibility: hidden;
+}
+
+.contactus_element {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.contact_info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: white;
+}
+
+.contact_info .contact_heading {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.contact_info .contact_paragraph {
+  margin-bottom: 10px;
+}
+
+.contact_info2 {
+  display: flex;
+}
+
+.contact_info2 .contact_item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+.contact_item .email::before {
+  content: "\f0e0";
+  font-weight: 600;
+  font-size: 2rem;
+  font-family: "Font Awesome 5 Free";
+}
+
+.contact_item .phone::before {
+  content: "\f095";
+  font-weight: 600;
+  font-size: 2rem;
+  font-family: "Font Awesome 5 Free";
+}
+
+.contactus_element form input[name="fname"],
+.contactus_element form input[name="lname"] {
+  padding: 10px;
+}
+
+.contactus_element form textarea {
+  width: 400px;
+}
+
+form input[type="submit"] {
+  background-color: aqua;
+  border: none;
+  padding: 10px 15%;
+  margin-left: auto;
+  display: block;
 }
