@@ -511,7 +511,7 @@ li {
   font-weight: 600;
   margin-top: -30px;
   margin-bottom: 10px;
-  color: black;
+  color: white;
 }
 
 .contact_info .contact_paragraph {
@@ -1094,8 +1094,21 @@ footer .wrapper {
 
   .contact_info .contact_paragraph {
     margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  .contactus_element form input[name="fname"],
+  .contactus_element form input[name="lname"] {
+    width: 500px;
+    margin-bottom: 10px;
   }
 
+  .contactus_element form textarea {
+    width: 500px;
+  }
+
+  form input[type="submit"] {
+    margin-left: 242px;
+  }
   .contactus_element {
     display: flex;
     flex-direction: column;
