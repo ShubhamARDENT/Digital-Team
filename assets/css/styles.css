@@ -545,15 +545,15 @@ li {
   font-family: "Font Awesome 5 Free";
 }
 
-.contactus_element form input[name="fname"],
-.contactus_element form input[name="lname"] {
+form input[name="fname"],
+form input[name="lname"] {
   padding: 10px;
   width: 300px;
   font-weight: 600;
   font-family: "Geist", sans-serif;
 }
 
-.contactus_element form textarea {
+form textarea {
   width: 600px;
   padding: 10px;
   font-weight: 600;
@@ -974,6 +974,10 @@ footer .wrapper {
   color: gray;
 }
 
+.facebook {
+  color: transparent;
+}
+
 .social_links_cards .twitter::before {
   content: "\f099";
   font-weight: 600;
@@ -981,12 +985,20 @@ footer .wrapper {
   font-family: "FontAwesome";
   color: gray;
 }
+
+.twitter {
+  color: transparent;
+}
+
 .social_links_cards .behance::before {
   content: "\f1b4";
   font-weight: 600;
   font-size: 2rem;
   font-family: "FontAwesome";
   color: gray;
+}
+.behance {
+  color: transparent;
 }
 
 .social_links_cards .tumbler::before {
@@ -997,6 +1009,10 @@ footer .wrapper {
   color: gray;
 }
 
+.tumbler {
+  color: transparent;
+}
+
 .social_links_cards .browser::before {
   content: "\f0ac";
   font-weight: 600;
@@ -1004,6 +1020,11 @@ footer .wrapper {
   font-family: "FontAwesome";
   color: gray;
 }
+
+.browser {
+  color: transparent;
+}
+
 .checkbtn {
   font-size: 30px;
   color: white;
@@ -1029,7 +1050,11 @@ footer .wrapper {
   }
 
   .pricing_list {
-    column-gap: 10px;
+    grid-template-columns: repeat(3, 300px);
+  }
+
+  .price_list li {
+    width: 10%;
   }
 
   .navbar .wrapper h1 a {
@@ -1062,6 +1087,12 @@ footer .wrapper {
     flex: 1 1 calc(48% - 10px);
     max-width: calc(60% - 10px);
   }
+  .contactus_element {
+    grid-template-columns: repeat(2, 500px);
+  }
+  form textarea {
+    width: 400px;
+  }
 }
 
 /* tablet screen */
@@ -1088,6 +1119,10 @@ footer .wrapper {
     width: 50%;
   }
 
+  .agency .wrapper {
+    width: 80%;
+  }
+
   .contact_info2 .contact_item {
     gap: 10px;
   }
@@ -1096,13 +1131,13 @@ footer .wrapper {
     margin-bottom: 20px;
     font-size: 1.5rem;
   }
-  .contactus_element form input[name="fname"],
-  .contactus_element form input[name="lname"] {
+
+  #fname {
     width: 500px;
     margin-bottom: 10px;
   }
 
-  .contactus_element form textarea {
+  .contactus .wrapper form textarea {
     width: 500px;
   }
 
@@ -1113,6 +1148,7 @@ footer .wrapper {
     display: flex;
     flex-direction: column;
   }
+
   .portfolio .portfolio_imgs {
     grid-template-columns: repeat(2, 350px);
   }
@@ -1129,6 +1165,10 @@ footer .wrapper {
 
   form {
     margin-top: 50px;
+  }
+
+  .agency .wrapper {
+    width: 80%;
   }
 
   /* hamburger */
